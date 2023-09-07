@@ -20,6 +20,4 @@ Route::get('/', function () {
 
 Route::get('/product', [ProductController::class, 'index'])->name('product.index');
 Route::get('/product/create', [ProductController::class, 'create'])->name('product.create');
-Route::get('/product/save', [ProductController::class, 'saveproduct'])->name('product.store');
-Route::get('/product', [ProductController::class, 'index'])->name('product-index');
-Route::get('/product', [ProductController::class, 'index'])->name('product-index');
+Route::post('/product', [ProductController::class, 'saveproduct'])->name('product.save');

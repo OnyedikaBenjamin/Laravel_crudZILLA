@@ -7,7 +7,9 @@
 </head>
 <body>
     <h2>Add a Product</h2>
-    <form action="process_form.php" method="POST">
+    <form action="process_form.php" method="POST" action="{{route('product.save')}}">
+    @csrf
+    @method('post')
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br><br>
         <label for="quantity">Quantity:</label>

@@ -10,11 +10,14 @@ class ProductController extends Controller
     public function index(){
         return view('products.index');
     }
-
     public function create(){
         return view('products.create');
     }
-    public function saveProduct(Request $request){
-        return dd($request);
+    public function saveproduct(Request $request){
+        $data = $request->validate([
+            'name' => 'required',
+            'qty' => 'required|numeric',
+            'price' =>' required|decimal'
+        ])
     }
 }
