@@ -15,6 +15,6 @@ class ProductController extends Controller
         return view('products.create');
     }
     public function saveProduct(Request $request){
-        return view('products.store');
+        return dd($request);
     }
 }
