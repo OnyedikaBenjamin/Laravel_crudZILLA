@@ -7,6 +7,9 @@
 </head>
 <body>
     <h2>Add a Product</h2>
+    <div>
+    @if()
+    </div>
     <form method="POST" action="{{route('product.save')}}">
     @csrf
     @method('post')
