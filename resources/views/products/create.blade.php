@@ -9,7 +9,11 @@
     <h2>Add a Product</h2>
     <div>
     @if($error->any())
-    <ul></ul>
+    <ul>
+    @foreach($error->all() as $error)
+    <li>{{$error}}</li>
+    @endforeach()
+    </ul>
     @endif()
     </div>
     <form method="POST" action="{{route('product.save')}}">
