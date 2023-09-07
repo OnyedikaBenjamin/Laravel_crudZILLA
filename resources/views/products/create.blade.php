@@ -13,7 +13,6 @@
         
         <label for="quantity">Quantity:</label>
         <input type="number" id="quantity" name="quantity" required><br><br>
-        
         <label for="price">Price:</label>
         <input type="number" step="0.01" id="price" name="price" required><br><br>
         
