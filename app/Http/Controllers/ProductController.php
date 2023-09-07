@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
+use App\Models\Product;
+
 class ProductController extends Controller
 {
     public function index(){
@@ -17,7 +19,10 @@ class ProductController extends Controller
         $data = $request->validate([
             'name' => 'required',
             'qty' => 'required|numeric',
-            'price' =>' required|decimal'
-        ])
-    }
-}
+            'price' =>' required|decimal',
+            'description'=>'nullable',
+        ]);
+        $newProduct =Product::create($data);
+        return redirect(route('product.index'));
+}}
+
