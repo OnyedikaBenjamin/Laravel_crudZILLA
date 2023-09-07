@@ -8,7 +8,7 @@
 <body>
     <h2>Add a Product</h2>
     <div>
-    @if()
+    @if($error->any())
     </div>
     <form method="POST" action="{{route('product.save')}}">
     @csrf
