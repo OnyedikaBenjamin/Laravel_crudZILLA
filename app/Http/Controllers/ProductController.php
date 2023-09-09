@@ -21,7 +21,7 @@ class ProductController extends Controller
     public function saveproduct(Request $request)
     {
         $data = $request->validate([
-            'name' => 'required',
+             'name' => 'required',
             'qty' => 'required|numeric',
             'price' => 'required|decimal:2',
             // 'description' => 'nullable',
