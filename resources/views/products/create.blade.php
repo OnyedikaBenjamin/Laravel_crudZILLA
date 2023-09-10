@@ -21,10 +21,13 @@
     @method('post')
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br><br>
+
         <label for="quantity">Quantity:</label>
-        <input type="number" id="quantity" name="quantity" required><br><br>
+        <input type="text" id="quantity" name="quantity" required><br><br>
+
         <label for="price">Price:</label>
         <input type="number" step="0.01" id="price" name="price" required><br><br>
+        
         <label for="description">Description:</label><br>
         <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
         

@@ -22,9 +22,9 @@ class ProductController extends Controller
     {
         $data = $request->validate([
              'name' => 'required',
-            'qty' => 'required|numeric',
+            'quantity' => 'required|numeric',
             'price' => 'required|decimal:2',
-            // 'description' => 'nullable',
+            'description' => 'nullable',
         ]);
 
         $newProduct = Product::create($data);
