@@ -26,6 +26,10 @@
                     <td>{{$product->quantity}}</td>
                     <td>{{$product->price}}</td>
                     <td>{{$product->description}}</td>
+                    <td>
+                        <a href="{{}}">
+                        </a>
+                    </td>
                 </tr>
             @endforeach
         </table>

@@ -31,4 +31,8 @@ class ProductController extends Controller
         $newProduct = Product::create($data);
         return redirect(route('product.index'));
     }
+
+    public function editproduct(Product $product){
+
+    }
 }

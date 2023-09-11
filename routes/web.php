@@ -21,4 +21,4 @@ Route::get('/', function () {
 Route::get('/product', [ProductController::class, 'index'])->name('product.index');
 Route::get('/product/create', [ProductController::class, 'create'])->name('product.create');
 Route::post('/product', [ProductController::class, 'saveproduct'])->name('product.save');
-Route::get('/product/{product}/edit', [ProductController::class, 'editProduct'])->name('product.save');
+Route::get('/product/{product}/edit', [ProductController::class, 'editproduct'])->name('product.edit');
