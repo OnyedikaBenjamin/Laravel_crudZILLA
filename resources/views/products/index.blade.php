@@ -7,6 +7,8 @@
 </head>
 <body>
     <h1>Products</h1>
-    <div>index</div>
+    <div>
+    
+    </div>
 </body>
 </html>
