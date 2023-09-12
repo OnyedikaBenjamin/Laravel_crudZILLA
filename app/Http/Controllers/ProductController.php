@@ -14,11 +14,9 @@ class ProductController extends Controller
         return view('products.index', ['products' => $products]);
     }
 
-    public function create()
-    {
+    public function create() {
         return view('products.create');
     }
-
     public function saveproduct(Request $request)
     {
         $data = $request->validate([
@@ -27,12 +25,11 @@ class ProductController extends Controller
             'price' => 'required|decimal:0,2',
             'description' => 'nullable',
         ]);
-
         $newProduct = Product::create($data);
         return redirect(route('product.index'));
     }
 
     public function editproduct(Product $product){
-        dd($product);
+        // dd($product);
     }
 }
