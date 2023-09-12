@@ -30,6 +30,6 @@ class ProductController extends Controller
     }
 
     public function editproduct(Product $product){
-        // dd($product);
+        dd($product);
     }
 }
